@@ -18,3 +18,5 @@ file, readme.md.
 <li>md.in: Input parameter file (to be redirected to the standard input)</li>
 </ul>
 ![Screen shot of MD simulation](ScreenShot.png)
+
+Placeholder for project initialization
