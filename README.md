@@ -19,4 +19,14 @@ file, readme.md.
 </ul>
 ![Screen shot of MD simulation](ScreenShot.png)
 
+## 3. Experiment
+count time: decrease the abnormal time caused by system
+1. different size of the datasets
+    * 100000X
+    * 200000X
+    * ...
+    * 800000X
+    <br> efficiency
+2. impact of different threads
+
 Placeholder for project initialization
