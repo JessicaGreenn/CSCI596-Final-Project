@@ -20,8 +20,8 @@ def read_graph(file_path):
     return edges
 
 file_path = 'web-Google.txt'
-MaxId = 5000
-outFile = "testDataset.txt"
+MaxId = 650000
+outFile = "mediumDataset.txt"
 nodes = set()
 newEdges = list()
 edges = read_graph(file_path)
