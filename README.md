@@ -14,22 +14,22 @@ This project uses PySpark to parallelize the iterative PageRank computation, opt
 <br> This implementation is ideal for high-volume datasets in applications such as web search, social network analysis, and recommendation systems. </br>
 
 ## 0. Prerequisites
-Only needed is C compiler.
+Only needed is Colab Free Version.
 ## 1. How to compile and run
-If the C compiler on your computer is cc (also common is gcc for Gnu C
-compiler), type:
-cc -O -o md md.c -lm
-This will create an executable named md. To run the executable, type:
-./md < md.in
+Type:
+`py PageRank_with_parallelization.py`
 ## 2. Files
 The following files are included in this folder, in addition to this readme
 file, readme.md.
 <ul>
-<li>md.c: Main C program</li>
-<li>md.h: Header file for md.c</li>
-<li>md.in: Input parameter file (to be redirected to the standard input)</li>
+<li>PageRank_with_parallelizatio.py: Main Python program</li>
+<li>generateDataset.py: Code block to truncate the original dataset into different sizes</li>
+<li>experiment_graph.ipynb: Code block to draw the result plot</li>
+<li>web-Google.txt: The original dataset</li>
+<li>smallDataset.txt: The dataset with nodes id <= 100k</li>
+<li>mediumDataset.txt: The dataset with nodes id <= 600k</li>
+<li>TestResult: Folder of all the experiment results: .txt files as outputs and .png file as result visualization</li>
 </ul>
-![Screen shot of MD simulation](ScreenShot.png)
 
 ## 3. Experiment
 count time: decrease the abnormal time caused by system
@@ -41,4 +41,3 @@ count time: decrease the abnormal time caused by system
     <br> efficiency
 2. impact of different threads
 
-Placeholder for project initialization
