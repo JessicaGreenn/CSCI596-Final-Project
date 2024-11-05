@@ -43,14 +43,10 @@ For this project, we use datasets derived from `web-Google.txt`, originally obta
 Each of these datasets will be used to evaluate the efficiency of our parallel computing solution.
 
 ## 4. Experiment
-count time: decrease the abnormal time caused by system
-1. different size of the datasets
-    * 100000X
-    * 200000X
-    * ...
-    * 800000X
-    <br> efficiency
-2. impact of different threads
+In this experiment, we will evaluate our program using three generated datasets, analyzing its performance under varying levels of parallelism. Specifically, we will test with 1, 2, 4, 8, and 16 parallel threads. We will record the execution time for each level of parallelism and plot the results to observe performance trends.<br>
 
 ![result visualization](./TestResult/result_img.png)
+As expected, calculating the rank for larger graphs takes more time. Initially, we observe performance improvements as we increase parallelism; however, beyond 4 threads, the performance gains become minimal. This limited improvement beyond a certain level of parallelism may be due to two factors:
+1. The dataset used in our experiment is relatively small, which may lead to diminishing returns as parallelism increases. With multiple cores in use, each core's processing capacity may exceed the dataset's demands, causing performance to plateau. Additionally, increased cross-process communication at higher levels of parallelism can further consume resources, resulting in minimal or even slightly increased computation times.
+2. In industrial applications, Spark is typically deployed across multiple machines within a distributed framework, allowing it to efficiently handle large-scale data processing in parallel. However, due to resource limitations, our model currently runs on a single local machine, preventing Spark from leveraging its full potential in distributed parallel processing. With multi-machine deployment, we expect that the performance improvements would be more significant.
 
