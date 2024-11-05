@@ -17,7 +17,7 @@ This project uses PySpark to parallelize the iterative PageRank computation, opt
 Only needed is Colab Free Version.
 ## 1. How to compile and run
 Type:
-* `pip install PySpark`
+* `pip install pyspark`
 * `py PageRank_with_parallelization.py`
 ## 2. Files
 The following files are included in this folder, in addition to this readme
