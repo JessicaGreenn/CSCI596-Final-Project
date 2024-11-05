@@ -31,7 +31,17 @@ file, readme.md.
 </ul>
 ![Screen shot of MD simulation](ScreenShot.png)
 
-## 3. Experiment
+## 3. Dataset
+
+For this project, we use datasets derived from `web-Google.txt`, originally obtained from [Kaggle](https://www.kaggle.com/code/wakkkka/homework-pagerank/input). These datasets are designed to study the effects of different dataset sizes on parallel computing performance. We have prepared three datasets with varying sizes:
+
+* smallDataset.txt: 697 KB
+* mediumDataset.txt: 34.3 MB
+* web-Google.txt: 71.9 MB (original dataset)
+
+Each of these datasets will be used to evaluate the efficiency of our parallel computing solution.
+
+## 4. Experiment
 count time: decrease the abnormal time caused by system
 1. different size of the datasets
     * 100000X
