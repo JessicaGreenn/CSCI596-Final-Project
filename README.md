@@ -10,6 +10,7 @@ This project uses PySpark to parallelize the iterative PageRank computation, opt
 * Parallelized Iterative Computation: Efficiently handles multiple iterations across distributed nodes.
 * Optimized Data Collection: Minimizes data shuffling to reduce overhead.
 * Flexible Configuration: Allows easy tuning for various graph sizes and cluster configurations.
+
 <br> This implementation is ideal for high-volume datasets in applications such as web search, social network analysis, and recommendation systems. </br>
 
 ## 0. Prerequisites
