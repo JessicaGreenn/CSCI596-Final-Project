@@ -35,9 +35,9 @@ file, readme.md.
 
 For this project, we use datasets derived from `web-Google.txt`, originally obtained from [Kaggle](https://www.kaggle.com/code/wakkkka/homework-pagerank/input). These datasets are designed to study the effects of different dataset sizes on parallel computing performance. We have prepared three datasets with varying sizes:
 
-* smallDataset.txt: 697 KB
-* mediumDataset.txt: 34.3 MB
-* web-Google.txt: 71.9 MB (original dataset)
+* `smallDataset.txt`: 697 KB
+* `mediumDataset.txt`: 34.3 MB
+* `web-Google.txt`: 71.9 MB (original dataset)
 
 Each of these datasets will be used to evaluate the efficiency of our parallel computing solution.
 
