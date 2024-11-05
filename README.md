@@ -1,6 +1,17 @@
-# CSCI596 Final Project: Molecular Dynamics
-This is a readme file for a simple molecular dynamics (MD) program
-for Lennard-Jones potential.
+# CSCI596 Final Project: Parallel Computing based PageRank Optimization
+This is a readme file for the Parallel Computing based PageRank Optimization project. 
+This project implements an optimized version of the PageRank algorithm, leveraging parallel processing techniques to enhance efficiency in large-scale graph computations.
+
+### Introduction to PageRank
+Originally developed by Google, the PageRank algorithm is a graph-based ranking method that assigns relative importance to nodes (e.g., web pages) based on their link structure. Each node's rank is determined by the ranks of nodes linking to it, with the goal of identifying influential nodes in a network. By iteratively distributing rank scores across links, PageRank helps surface high-authority pages in web search, making it foundational in information retrieval and network analysis.
+
+### About This Project
+This project uses PySpark to parallelize the iterative PageRank computation, optimizing for both runtime and scalability. Key features include:
+* Parallelized Iterative Computation: Efficiently handles multiple iterations across distributed nodes.
+* Optimized Data Collection: Minimizes data shuffling to reduce overhead.
+* Flexible Configuration: Allows easy tuning for various graph sizes and cluster configurations.
+<br> This implementation is ideal for high-volume datasets in applications such as web search, social network analysis, and recommendation systems. </br>
+
 ## 0. Prerequisites
 Only needed is C compiler.
 ## 1. How to compile and run
