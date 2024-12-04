@@ -43,7 +43,7 @@ For this project, we use datasets derived from `web-Google.txt`, originally obta
 Each of these datasets will be used to evaluate the efficiency of our parallel computing solution.
 
 ## 4. Experiment
-In this experiment, we will evaluate our program using three generated datasets, analyzing its performance under varying levels of parallelism. Specifically, we will test with 1, 2, 4, 8, and 16 parallel threads. We will record the execution time for each level of parallelism and plot the results to observe performance trends.<br>
+In this experiment, we evaluated our program using three generated datasets, analyzing its performance under varying levels of parallelism. Specifically, we tested with 1, 2, 4, 8, and 16 parallel threads. We recorded the execution time for each level of parallelism and ploted the results to observe performance trends.<br>
 
 ![result visualization](./TestResult/result_img.png)
 As expected, calculating the rank for larger graphs takes more time. Initially, we observe performance improvements as we increase parallelism; however, beyond 4 threads, the performance gains become minimal. This limited improvement beyond a certain level of parallelism may be due to two factors:
